@@ -1,0 +1,8 @@
+<h2>Lista de Alumnos</h2>
+
+<ul>
+  <li *ngFor="let alumno of listaAlumnos" [ngClass]="{'aprobado': alumno.nota >= 6, 'desaprobado': alumno.nota < 6}">
+    {{ alumno.nombre | uppercase }} // Nota:{{ alumno.nota }}
+  </li>
+</ul>
+
